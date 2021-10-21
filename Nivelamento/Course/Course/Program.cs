@@ -13,6 +13,9 @@ namespace Course
             SaidaDados saida = new SaidaDados();
             //saida.SaidaDado();
             //saida.PlaceInterConcat();
+
+            Exercicios ex = new Exercicios();
+            //ex.Ex01();
         }
     }
 }
