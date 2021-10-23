@@ -19,8 +19,10 @@ namespace Course
 
             OperadoresAtribuicao operadoresAtribuicao = new OperadoresAtribuicao();
             //operadoresAtribuicao.Operadores();
-            operadoresAtribuicao.Atribuicao();
+            //operadoresAtribuicao.Atribuicao();
 
+            ConversaoCasting conversaoCasting = new ConversaoCasting();
+            //conversaoCasting.Conversao();
 
         }
     }
