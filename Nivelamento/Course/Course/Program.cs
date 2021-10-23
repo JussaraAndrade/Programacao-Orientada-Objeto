@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProgramacaoBasica;
+using System;
 using System.Globalization;
 
 namespace Course
@@ -25,7 +26,10 @@ namespace Course
             //conversaoCasting.Conversao();
 
             OperadoresAritmeticos aritmeticos = new OperadoresAritmeticos();
-            aritmeticos.Aritmeticos();
+            //aritmeticos.Aritmeticos();
+
+            EntradaDados entradaDados = new EntradaDados();
+            //entradaDados.EntradaDado();
         }
     }
 }
