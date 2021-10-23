@@ -16,6 +16,12 @@ namespace Course
 
             Exercicios ex = new Exercicios();
             //ex.Ex01();
+
+            OperadoresAtribuicao operadoresAtribuicao = new OperadoresAtribuicao();
+            //operadoresAtribuicao.Operadores();
+            operadoresAtribuicao.Atribuicao();
+
+
         }
     }
 }
