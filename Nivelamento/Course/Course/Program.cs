@@ -24,6 +24,8 @@ namespace Course
             ConversaoCasting conversaoCasting = new ConversaoCasting();
             //conversaoCasting.Conversao();
 
+            OperadoresAritmeticos aritmeticos = new OperadoresAritmeticos();
+            aritmeticos.Aritmeticos();
         }
     }
 }
