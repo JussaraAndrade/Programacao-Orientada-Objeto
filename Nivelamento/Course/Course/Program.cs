@@ -17,6 +17,7 @@ namespace Course
 
             Exercicios ex = new Exercicios();
             //ex.Ex01();
+            ex.Ex02();
 
             OperadoresAtribuicao operadoresAtribuicao = new OperadoresAtribuicao();
             //operadoresAtribuicao.Operadores();
@@ -30,7 +31,7 @@ namespace Course
 
             EntradaDados entradaDados = new EntradaDados();
             //entradaDados.EntradaDado();
-            entradaDados.ExercicioEntradaDado();
+            //entradaDados.ExercicioEntradaDado();
         }
     }
 }
