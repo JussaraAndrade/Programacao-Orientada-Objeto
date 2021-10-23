@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
 
 namespace ProgramacaoBasica
 {
@@ -31,6 +32,30 @@ namespace ProgramacaoBasica
             Console.WriteLine(a);
             Console.WriteLine(b);
             Console.WriteLine(c);
+        }
+
+        public void ExercicioEntradaDado()
+        {
+
+            int n1 = int.Parse(Console.ReadLine()); // Leitura do número inteiro
+            char ch = char.Parse(Console.ReadLine()); // Leitura de caracter 
+            double n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); // Leitura de casas decimais
+
+            string[] vetor = Console.ReadLine().Split(' ');
+            string nome = vetor[0];
+            char sexo = char.Parse(vetor[1]);
+            int idade = int.Parse(vetor[2]);
+            double altura = double.Parse(vetor[3], CultureInfo.InvariantCulture);
+
+
+            Console.WriteLine("Você dígitou");
+            Console.WriteLine(n1);
+            Console.WriteLine(ch);
+            Console.WriteLine(n2.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine(nome);
+            Console.WriteLine(sexo);
+            Console.WriteLine(idade);
+            Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture));
         }
     }
 }

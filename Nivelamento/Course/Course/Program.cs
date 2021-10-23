@@ -30,6 +30,7 @@ namespace Course
 
             EntradaDados entradaDados = new EntradaDados();
             //entradaDados.EntradaDado();
+            entradaDados.ExercicioEntradaDado();
         }
     }
 }
