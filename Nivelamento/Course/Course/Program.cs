@@ -45,7 +45,10 @@ namespace Course
             //operadoresComparativos.OperadoresComparativo();
 
             OperadoresLogicos operadoresLogicos = new OperadoresLogicos();
-            operadoresLogicos.OperadoresLogico();
+            //operadoresLogicos.OperadoresLogico();
+
+            EscopoInicializacao escopoInicializacao = new EscopoInicializacao();
+            escopoInicializacao.EscopoInicializacao2();
         }
     }
 }
