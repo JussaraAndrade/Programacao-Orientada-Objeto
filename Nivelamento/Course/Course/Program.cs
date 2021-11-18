@@ -42,7 +42,10 @@ namespace Course
             //desafio.Desafio08();
 
             OperadoresComparativos operadoresComparativos = new OperadoresComparativos();
-            operadoresComparativos.OperadoresComparativo();
+            //operadoresComparativos.OperadoresComparativo();
+
+            OperadoresLogicos operadoresLogicos = new OperadoresLogicos();
+            operadoresLogicos.OperadoresLogico();
         }
     }
 }
