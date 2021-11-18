@@ -37,7 +37,12 @@ namespace Course
             //desafio.Desafio03();
             //desafio.Desafio04();
             //desafio.Desafio05();
-            desafio.Desafio06();
+            //desafio.Desafio06();
+            //desafio.Desafio07();
+            //desafio.Desafio08();
+
+            OperadoresComparativos operadoresComparativos = new OperadoresComparativos();
+            operadoresComparativos.OperadoresComparativo();
         }
     }
 }
