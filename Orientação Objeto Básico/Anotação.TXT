@@ -1,0 +1,7 @@
+Capítulo 2:
+
+- Classes, atributos, métodos, membros estáticos
+- Construtores, palavra this, sobrecarga, encapsulamento
+- Comportamento de memória, arrays, listas
+- Tópicos especiais em C# - Parte 1
+
