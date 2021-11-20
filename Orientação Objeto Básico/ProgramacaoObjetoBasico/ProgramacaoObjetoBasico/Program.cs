@@ -7,26 +7,41 @@ namespace ProgramacaoObjetoBasico
     {
         static void Main(string[] args)
         {
-            double xA, xB, xC, yA, yB, yC;
+            /*
+
+            Classe, objetos e atributos:
+
+            * Classe: é a definição do tipo
+            * Objeto: são instâncias da classe, caso particulares da classe.
+             
+            Duas váriaveis compostas: x e y
+            */
+
+            Triangulo x, y; // Duas variáveis do tipo Triangulo
+
+            // Instanciar
+            x = new Triangulo(); // Objeto x
+            y = new Triangulo(); // Objeto y
+
 
             Console.WriteLine("Entre com as medidas do triângulo X: ");
-            xA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            xB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Entre com as medidas do triângulo Y: ");
-            yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 
-            double p = (xA + xB + xC) / 2.0;
+            double p = (x.A + x.B + x.C) / 2.0;
             // area = √p(p-a)(p-b)(p-c)
-            double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
+            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
 
             // p = a + b + c/2 
-            p = (yA + yB + yC) / 2.0;
-            double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC));
+            p = (y.A + y.B + y.C) / 2.0;
+            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
 
             Console.WriteLine("Área de x = " +areaX.ToString("F4", CultureInfo.InvariantCulture));
             Console.WriteLine("Área de y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
