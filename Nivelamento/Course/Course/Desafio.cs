@@ -37,7 +37,7 @@ namespace Course
             RAIO = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             AREA = PI * Math.Pow(RAIO, 2.0);
 
-            Console.WriteLine("A=" +AREA.ToString("F4", CultureInfo.InvariantCulture));
+            Console.WriteLine("A=" + AREA.ToString("F4", CultureInfo.InvariantCulture));
         }
 
         /*
@@ -70,7 +70,7 @@ namespace Course
 
             SALARIO = HORAS * VALOR;
 
-            Console.WriteLine("NUMBER = " +FUNCIONARIO);
+            Console.WriteLine("NUMBER = " + FUNCIONARIO);
             Console.WriteLine("SALARY = U$ " + SALARIO.ToString("F2", CultureInfo.InvariantCulture));
         }
 
@@ -129,6 +129,81 @@ namespace Course
             Console.WriteLine("QUADRADO: " + quadrado.ToString("F3", CultureInfo.InvariantCulture));
             Console.WriteLine("RETANGULO: " + retangulo.ToString("F3", CultureInfo.InvariantCulture));
 
+        }
+
+        public void Desafio07()
+        {
+            int SENHA = int.Parse(Console.ReadLine());
+
+            while (SENHA != 2002)
+            {
+                Console.WriteLine("Senha Invalida");
+                SENHA = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Acesso Permitido");
+        }
+
+        public void Desafio08()
+        {
+            int ALCOOL = 0;
+            int GASOLINA = 0;
+            int DIESEL = 0;
+
+            int TIPO = int.Parse(Console.ReadLine());
+
+            while (TIPO != 4)
+            {
+                if (TIPO == 1)
+                {
+                    ALCOOL = ALCOOL + 1;
+                }
+                else if (TIPO == 2)
+                {
+                    GASOLINA = GASOLINA + 1;
+                }
+                else if (TIPO == 3)
+                {
+                    DIESEL = DIESEL + 1;
+                }
+
+                TIPO = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("MUITO OBRIGADO");
+            Console.WriteLine("ALCOOL: " + ALCOOL);
+            Console.WriteLine("GASOLINA: :" + GASOLINA);
+            Console.WriteLine("DIESEL: " + DIESEL);
+        }
+
+        public void Desafio09()
+        {
+            int X, Y;
+            string[] VALORES = Console.ReadLine().Split(' ');
+            X = int.Parse(VALORES[0]);
+            Y = int.Parse(VALORES[1]);
+
+            while(X != 0 && Y != 0)
+            {
+                if(X != 0 && Y > 0)
+                {
+                    Console.WriteLine("primeiro");
+                }
+                else if (X < 0 && Y > 0)
+                {
+                    Console.WriteLine("segundo");
+                }
+                else if (X < 0 && Y < 0)
+                {
+                    Console.WriteLine("terceiro");
+                }
+                else
+                {
+                    Console.WriteLine("quarto");
+                }
+                VALORES = Console.ReadLine().Split(' ');
+                X = int.Parse(VALORES[0]);
+                Y = int.Parse(VALORES[1]);
+            }
         }
     }
 }

@@ -40,6 +40,7 @@ namespace Course
             //desafio.Desafio06();
             //desafio.Desafio07();
             //desafio.Desafio08();
+            desafio.Desafio09();
 
             OperadoresComparativos operadoresComparativos = new OperadoresComparativos();
             //operadoresComparativos.OperadoresComparativo();

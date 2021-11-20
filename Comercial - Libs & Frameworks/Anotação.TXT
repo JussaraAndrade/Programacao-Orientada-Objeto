@@ -1,0 +1,4 @@
+Capítulo 5:
+
+- Padrão camadas, Padrão MVC, Banco de dados, ORM, GUI, CRUD, etc.
+- ASP.NET Core, Entity Framework Core

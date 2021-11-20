@@ -1,0 +1,7 @@
+Capítulo 4:
+
+- Trabalhando com arquivos
+- Interfaces
+- Generics, Set, Dictionary
+- Tópicos especiais em C# - Parte 2
+- Expressões lambda, delegates, LINQ
