@@ -77,6 +77,8 @@ namespace ProgramacaoObjetoBasico
                 Console.WriteLine("Pessoa mais velha: " + p2.Nome);
             }
 
+
+
             Funcionario f1 = new Funcionario();
             Funcionario f2 = new Funcionario();
 
@@ -96,6 +98,21 @@ namespace ProgramacaoObjetoBasico
 
             Console.WriteLine("Salário médio = " + media.ToString("F2", CultureInfo.InvariantCulture));
 
+            Console.WriteLine("-------------------------------------------");
+
+            Produto p = new Produto();
+
+            Console.WriteLine("Entre os dados do produto: ");
+            Console.Write("Nome: ");
+            p.Nome = Console.ReadLine();
+
+            Console.WriteLine("Preço: ");
+            p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.Write("Quantidade no estoque: ");
+            p.Quantidade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Dados do produto: " +p);
         }
     }
 }
