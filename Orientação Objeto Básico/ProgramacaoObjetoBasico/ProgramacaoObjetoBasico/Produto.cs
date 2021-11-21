@@ -12,6 +12,14 @@ namespace ProgramacaoObjetoBasico
         {
             return Preco * Quantidade;
         }
+        public void AdicionarProdutos(int quantidade)
+        {
+            Quantidade += quantidade;
+        }
+        public void RemoverProdutos(int quantidade)
+        {
+            Quantidade -= quantidade;
+        }
 
         // Sobreposição - Transforma o produto em String
         public override string ToString() // Assinatura báisca da ToString
@@ -24,14 +32,6 @@ namespace ProgramacaoObjetoBasico
                 + " unidades, Total: $ "
                 +ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
-
-        public void AdicionarProdutos(int quantidade)
-        {
-            quantidade++;
-        }
-        public void RemoverProdutos(int quantidade)
-        {
-            quantidade--;
-        }
+ 
     }
 }

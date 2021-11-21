@@ -8,7 +8,6 @@ namespace ProgramacaoObjetoBasico
         static void Main(string[] args)
         {
             /*
-
             Classe, objetos e atributos:
 
             * Classe: é a definição do tipo
@@ -20,7 +19,7 @@ namespace ProgramacaoObjetoBasico
             // A classe Triangulo é um Tipo personalizados
             Triangulo x, y; // Duas variáveis do tipo Triangulo
 
-            //// Instanciar
+            // Instanciar
             x = new Triangulo(); // Objeto x
             y = new Triangulo(); // Objeto y
 
@@ -51,7 +50,7 @@ namespace ProgramacaoObjetoBasico
                 Console.WriteLine("Maior área: Y");
             }
 
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------");
 
             Pessoa p1 = new Pessoa();
             Pessoa p2 = new Pessoa();
@@ -77,7 +76,7 @@ namespace ProgramacaoObjetoBasico
                 Console.WriteLine("Pessoa mais velha: " + p2.Nome);
             }
 
-
+            Console.WriteLine("---------------------------------------------------------------------");
 
             Funcionario f1 = new Funcionario();
             Funcionario f2 = new Funcionario();
@@ -98,7 +97,7 @@ namespace ProgramacaoObjetoBasico
 
             Console.WriteLine("Salário médio = " + media.ToString("F2", CultureInfo.InvariantCulture));
 
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------");
 
             Produto p = new Produto();
 
@@ -106,13 +105,31 @@ namespace ProgramacaoObjetoBasico
             Console.Write("Nome: ");
             p.Nome = Console.ReadLine();
 
-            Console.WriteLine("Preço: ");
+            Console.Write("Preço: ");
             p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.Write("Quantidade no estoque: ");
             p.Quantidade = int.Parse(Console.ReadLine());
 
+            Console.WriteLine();
             Console.WriteLine("Dados do produto: " +p);
+
+            Console.WriteLine();
+            Console.Write("Digite o número de produtos a ser adicionado ao estoque: ");
+            int qte = int.Parse(Console.ReadLine());
+            p.AdicionarProdutos(qte);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + p);
+
+            Console.WriteLine();
+            Console.Write("Digite o número de produtos a ser removido do estoque: ");
+            qte = int.Parse(Console.ReadLine());
+            p.RemoverProdutos(qte);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + p);
+
         }
     }
 }
