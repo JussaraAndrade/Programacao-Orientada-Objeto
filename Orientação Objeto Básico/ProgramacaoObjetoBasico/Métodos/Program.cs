@@ -8,7 +8,7 @@ namespace Métodos
     {
         static void Main(string[] args)
         {
-            Triangulo x, y;
+            Triangulo x, y; // Instancias da classe
 
             x = new Triangulo();
             y = new Triangulo();

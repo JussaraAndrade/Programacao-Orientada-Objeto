@@ -1,6 +1,6 @@
 ﻿namespace Metodos
 {
-    // Classe
+    // Classe - definição do tipo
     class Triangulo
     {
         // Atributo
